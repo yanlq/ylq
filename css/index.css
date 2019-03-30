@@ -1,0 +1,148 @@
+/* date:2018-4-9
+author: xiehuanzhi;  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 1080px;
+    width: 1920px;
+    background: url(../images/bg.jpg) no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.header {
+    height: 177px;
+}
+
+.title {
+    float: left;
+    margin: 50px 0 0 42px;
+}
+
+.time {
+    margin: 48px 50px 0 0;
+    width: 643px;
+    height: 85px;
+    line-height: 85px;
+    background: url(../images/time.png) no-repeat;
+    background-position: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.time .date {
+    float: left;
+    margin-left: 50px;
+}
+
+.time .day {
+    float: left;
+    margin-left: 10px;
+}
+
+.time .hour {
+    float: left;
+    margin-left: 70px;
+}
+
+#demo {
+    height: 790px;
+    overflow: hidden;
+    width: 1820px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#demo:before {
+    content: "";
+    height: 1000px;
+    width: 1px;
+    left: 910px;
+    position: absolute;
+    background: url(../images/main-mid.png);
+}
+
+.main li {
+    float: left;
+    width: 910px;
+    height: 158px;
+    line-height: 158px;
+    box-sizing: content-box;
+    background: #1a3f78;
+    font-size: 56px;
+    color: #fff;
+    text-align: center;
+}
+
+.main li span {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main li span:nth-child(odd) {
+    font-size: 68px;
+    width: 333px;
+    color: #fcff00;
+}
+
+.main li span:nth-child(even) {
+    width: 222px;
+    font-size: 68px;
+    color: #5effd0;
+}
+
+.main li.deep {
+    background: #174b8b;
+}
+
+.main li.tint {
+    background: #1a3f78;
+}
+
+.footer {
+    width: 1820px;
+    height: 86px;
+    line-height: 86px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #3d76cd;
+    margin: 27px auto 0 auto;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer .r,
+.footer .l {
+    width: 50%;
+}
+
+.footer .l span {
+    display: inline-block;
+    width: 135px;
+    color: #ffde00;
+    font-weight: bold;
+}
+
+.footer .r span {
+    display: inline-block;
+    width: 135px;
+    color: #00fecb;
+    font-weight: bold;
+}
+
+.footer:before {
+    content: "";
+    height: 100px;
+    width: 1px;
+    top: 10px;
+    left: 910px;
+    position: absolute;
+    background: #7499d1;
+}
